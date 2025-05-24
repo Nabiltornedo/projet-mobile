@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAjouterBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un budget"
+        android:textSize="16sp"
+        android:backgroundTint="#2196F3"
+        app:cornerRadius="12dp"
+        android:textColor="@android:color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAjouterDepense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une dépense"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:backgroundTint="#FF9800"
+        app:cornerRadius="12dp"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/listViewBudgets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</LinearLayout>

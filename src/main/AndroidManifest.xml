@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projet_mobile">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projet_mobile"
+        tools:targetApi="31">
+
+        <!-- Lancement sur LoginActivity -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Autres activités -->
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.AbonnementActivity" />
+        <activity android:name=".activities.BudgetActivity" />
+        <activity android:name=".activities.PrevisionActivity" />
+        <activity android:name=".activities.AjouterAbonnementActivity" />
+        <activity android:name=".activities.AjouterBudgetActivity" />
+        <activity android:name=".activities.AjouterDepenseActivity" />
+        <activity android:name=".activities.AccueilActivity" />
+
+    </application>
+</manifest>
